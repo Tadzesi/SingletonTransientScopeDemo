@@ -71,20 +71,35 @@ Returns JSON showing the `Id` and `ServiceType` for each service instance.
 Example response:
 ```json
 {
-  "Singleton1": {
-    "Id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-    "Type": "Singleton",
-    "Explanation": "Singleton services truly remain singleton"
+  "singleton1": {
+    "id": "3c3a346a-c516-40c6-a1c8-c56177f9a4b4",
+    "type": "Singleton",
+    "explanation": "Singleton services truly remain singleton"
   },
-  "Scoped1": {
-    "Id": "yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy",
-    "Type": "Scoped",
-    "Explanation": "Scoped services are scoped to the HTTP request"
+  "singleton2": {
+    "id": "3c3a346a-c516-40c6-a1c8-c56177f9a4b4",
+    "type": "Singleton",
+    "explanation": "Singleton services truly remain singleton"
   },
-  "Transient1": {
-    "Id": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
-    "Type": "Transient",
-    "Explanation": "Transient services are new instances every time"
+  "scoped1": {
+    "id": "4b55d90b-22cb-4119-869c-97d7263a96c3",
+    "type": "Scoped",
+    "explanation": "Scoped services are scoped to the HTTP request"
+  },
+  "scoped2": {
+    "id": "4b55d90b-22cb-4119-869c-97d7263a96c3",
+    "type": "Scoped",
+    "explanation": "Scoped services are scoped to the HTTP request"
+  },
+  "transient1": {
+    "id": "12c960c6-002e-4aac-a682-6942454e57f8",
+    "type": "Transient",
+    "explanation": "Transient services are new instances every time"
+  },
+  "transient2": {
+    "id": "40ed11bd-856f-4cc4-9d4e-6f9a8ba18a11",
+    "type": "Transient",
+    "explanation": "Transient services are new instances every time"
   }
 }
 ```

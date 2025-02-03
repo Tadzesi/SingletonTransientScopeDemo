@@ -1,0 +1,9 @@
+@HostAddress = https://localhost:7226
+
+
+
+###
+
+GET {{HostAddress}}/services
+
+###
